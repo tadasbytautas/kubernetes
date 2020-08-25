@@ -3,4 +3,9 @@ kind: ConfigMap
 metadata:
     name: my-configmap
 data:
-    myKey: myValue
+    SECRET_KEY: "ea14aa2c791d8db92ee2912270dc652e"
+    MYSQL_USER: "root" 
+    MYSQL_PASSWORD: "123" 
+    MYSQL_HOST: "34.89.121.89"   
+    MYSQL_PORT: "3306" 
+    MYSQL_DB_NAME: "nickname_gen"
