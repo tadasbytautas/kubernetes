@@ -1,1 +1,11 @@
 config_map.yml
+
+sfia2/venv/
+
+.vscode/
+
+*/__pycache__
+
+.gitignore
+
+*/.dockerignore
