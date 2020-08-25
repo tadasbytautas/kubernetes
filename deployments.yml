@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: my-deployment
+spec:
+    selector:
+        matchLabels:
+            app: myApp
+    replicas: 3
+    template:
+        metadata:
+            labels:
+                app: myApp
+        spec:
+            containers:
+                - name: busybox-deployment
+                  image: busybox
+                  command: ['sh', '-c', 'sleep 3600']
+                  ports:
+                    - containerPort: 5000
